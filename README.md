@@ -11,7 +11,7 @@ Easy to customize HTML/CSS codebase.
 
 **Usage:******
 1. Clone the repository:
-    git clone https://github.com/your-username/mastering-dsa-blog.git
+    git clone https://github.com/sachin88888/BriefBytes.git
 2. Open index.html in your browser.
 3. Customize the content as per your requirements.
 
