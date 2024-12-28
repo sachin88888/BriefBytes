@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Blog</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #f8f5f2);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #3d3c3a, #d4af37);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .content-section {
+            padding: 20px 0;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #d4af37;
+            border-bottom: 2px solid #3d3c3a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 5px solid #d4af37;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        ul li:hover {
+            background: #f8f5f2;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #3d3c3a;
+            color: #fff;
+            margin-top: 20px;
+        }
+        /* Scroll to Top Button */
+        #scrollTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #d4af37;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #scrollTop:hover {
+            background: #bfa032;
+        }
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mastering DSA</h1>
+        <p>Learn, Practice, and Master Data Structures & Algorithms</p>
+    </header>
+    <div class="container">
+        <div class="content-section">
+            <h2 id="toc">Table of Contents</h2>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#basics">2. Basic Concepts</a></li>
+                <li><a href="#data-structures">3. Data Structures</a></li>
+                <li><a href="#algorithms">4. Algorithms</a></li>
+                <li><a href="#advanced">5. Advanced Topics</a></li>
+                <li><a href="#practice-problems">6. Practice Problems</a></li>
+                <li><a href="#resources">7. Resources</a></li>
+                <li><a href="#conclusion">8. Conclusion</a></li>
+            </ul>
+        </div>
+        <div class="content-section" id="introduction">
+            <h2>1. Introduction</h2>
+            <p>Discover the world of DSA, its applications, and importance in programming.</p>
+        </div>
+        <div class="content-section" id="basics">
+            <h2>2. Basic Concepts</h2>
+            <ul>
+                <li>Time Complexity & Space Complexity</li>
+                <li>Big-O, Big-Theta, and Big-Omega Notations</li>
+                <li>Recursion and Iteration</li>
+            </ul>
+        </div>
+        <!-- Add more sections here -->
+        <div class="content-section" id="conclusion">
+            <h2>8. Conclusion</h2>
+            <p>Stay consistent, keep practicing, and unlock the doors to technical mastery.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mastering DSA Blog. All Rights Reserved.</p>
+    </footer>
+    <button id="scrollTop" title="Scroll to Top">↑</button>
+
+    <script>
+        // Scroll to Top Button
+        const scrollTopButton = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollTopButton.style.display = 'flex';
+            } else {
+                scrollTopButton.style.display = 'none';
+            }
+        });
+
+        scrollTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
+
