@@ -19,6 +19,7 @@
             text-align: center;
             padding: 2rem 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         header h1 {
             margin: 0;
@@ -28,6 +29,37 @@
         header p {
             font-size: 1.2rem;
             margin-top: 10px;
+        }
+        /* Search Bar Styles */
+        .search-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 25px;
+            padding: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .search-container input {
+            border: none;
+            padding: 8px;
+            border-radius: 15px;
+            width: 200px;
+            outline: none;
+        }
+        .search-container button {
+            background-color: #d4af37;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .search-container button:hover {
+            background-color: #bfa032;
         }
         .container {
             max-width: 900px;
@@ -107,6 +139,10 @@
     <header>
         <h1>Mastering DSA</h1>
         <p>Learn, Practice, and Master Data Structures & Algorithms</p>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
     </header>
     <div class="container">
         <div class="content-section">
@@ -162,4 +198,3 @@
     </script>
 </body>
 </html>
-
